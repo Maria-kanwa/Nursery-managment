@@ -1,0 +1,754 @@
+/*
+Theme Name:university system
+Theme URI:http://www.icodeguru.pk
+Author: Plant nursery developers
+version:1.0
+Author URI:http://www.icodeguru.pk
+description:hello Team
+*/
+
+/* General styles */
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f7f0; /* Light green for a plant nursery */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header styles */
+header {
+    background-color: #6b8e23; /* Olive green for a natural leaf-like feel */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.site.title h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Navigation menu */
+.navbar-2 {
+    list-style: none;
+    display: flex;
+    
+    flex-wrap: nowrap; /* Ensure items stay on one line */
+    margin: 0;
+    padding: 0;
+    overflow-x: auto; /* Add horizontal scrolling if needed */
+}
+
+.navbar-2 li {
+    margin: 0 15px;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.navbar-2 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+    padding: 10px 15px;
+    background-color: rgba(0, 128, 0, 0.8); /* Green background */
+    border-radius: 5px;
+}
+.navbar-2 ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar-2 a:hover {
+    background-color: rgba(34, 139, 34, 0.9); /* Darker green */
+}
+
+/* Tagline */
+.tagline {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: #eee;
+    font-size: 1rem;
+}
+
+/* Cart button */
+.cart-button {
+    position: relative;
+}
+
+.cart-link {
+    text-decoration: none;
+    background-color: #228b22; /* Forest green */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cart-link:hover {
+    background-color: #006400; /* Dark green */
+    color: #fff;
+}
+
+.cart-link i {
+    margin-right: 8px;
+}
+
+/* Cart sidebar */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: right 0.3s;
+}
+
+.cart-sidebar.open {
+    right: 0;
+}
+
+.close-sidebar {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#cart-content {
+    padding: 20px;
+}
+
+/* Footer styles for .mycontainer */
+footer {
+    background-color: #6b8e23; /* Same olive green as the header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .mycontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+footer h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/* Global Styles */
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+/* Hero Section */
+.home-hero {
+    background: url('https://www.shutterstock.com/image-photo/various-flowers-cactus-plants-inside-260nw-74581096.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: white !important;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white !important;
+}
+
+.btn {
+    background-color: #48bb78;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #429a6d;
+}
+
+/* Categories Section */
+.categories {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: nowrap; /* Keep items in a single line */
+}
+
+.category-item {
+    flex: 1;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.category-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.category-item p {
+    color: #666;
+}
+
+/* Featured Plants Section */
+.featured-plants {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.featured-plants h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.plant-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: nowrap; /* Keep items in a single line */
+}
+
+.plant-card {
+    flex: 1;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.plant-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.plant-card:hover img {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.plant-card h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.plant-card p {
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.plant-card a {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #48bb78;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.plant-card a:hover {
+    color: #429a6d;
+}
+
+/* Contact Section */
+.contact-cta {
+    background-color: #48bb78;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+}
+
+.contact-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-cta .btn {
+    background-color: white;
+    color: #48bb78;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-cta .btn:hover {
+    background-color: #429a6d;
+    color: white;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .category-item, .plant-card {
+        width: 30%; /* Cards will take 30% of the width on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .category-item, .plant-card {
+        width: 45%; /* Cards will take 45% of the width on smaller tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .category-item, .plant-card {
+        width: 100%; /* Cards will take up the full width on mobile devices */
+    }
+}
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Hero Section */
+.about-hero-section {
+    background-image: url('https://media.istockphoto.com/id/1363636142/photo/blooming-flowers-in-pots-and-on-shelves-in-the-garden-center.jpg?s=612x612&w=0&k=20&c=dJPHJUFQotG3YH0J4aFaxoV1PJzhM3HVLvVf90Eha3k=');
+   height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.about-hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: white !important;
+}
+
+.about-hero-section p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white !important;
+}
+
+/* About Section */
+.about-content-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-container-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.about-main-content, .about-value-list {
+    flex: 1;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-main-content h2, .about-value-list h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-value-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-value-list li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+.contact-cta-section {
+    background-color: #48bb78;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+}
+
+.contact-cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-cta-section .btn {
+    background-color: white;
+    color: #48bb78;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-cta-section .btn:hover {
+    background-color: #429a6d;
+    color: white;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .about-main-content, .about-value-list {
+        width: 45%; /* Adjust layout for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-main-content, .about-value-list {
+        width: 100%; /* Make sections stack vertically on smaller tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-section h1 {
+        font-size: 2rem; /* Adjust font size on mobile */
+    }
+
+    .about-hero-section p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Contact Us Page Styles */
+.contact-us-hero {
+    background-color: #48bb78;  /* Green background */
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.contact-us-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-us-hero p {
+    font-size: 1.2rem;
+}
+
+/* Contact Form Section */
+.contact-us-form {
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form-container label {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form-container button {
+    padding: 12px 20px;
+    background-color: #48bb78;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.contact-form-container button:hover {
+    background-color: #429a6d;
+}
+
+/* Contact Info Section */
+.contact-info {
+    background-color: #f0f0f0;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact-info-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info-container h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-us-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+
+    .contact-form-container h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form-container input,
+    .contact-form-container textarea {
+        padding: 10px;
+    }
+
+    .contact-form-container button {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    .contact-info-container h3 {
+        font-size: 1.8rem;
+    }
+
+    .contact-info-container p {
+        font-size: 1.1rem;
+    }
+}
+
+/* General Container Styling */
+/* General Container Styling */
+/* General Container Styling */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Single Post Styling */
+.single_post {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* Three columns */
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.single_post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Post Thumbnail Styling */
+.single_post img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the space */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Read More Button */
+.read-more-btn {
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #48bb78;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #429a6d;
+}
+
+/* Hidden Details Styling */
+.hidden-details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+    color: #333;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .single_post {
+        width: calc(50% - 20px); /* Two columns */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .single_post {
+        width: calc(100% - 20px); /* Single column */
+    }
+}
+
